@@ -1,0 +1,173 @@
+/* Travel journal layout shared with the UK & Ireland itinerary. */
+.hero { background: linear-gradient(135deg, #263238, #455a64);
+    color: white;
+    padding: 42px 20px 36px; }
+.hero-inner { max-width: 1100px;
+    margin: auto; }
+.hero h1 { margin: 0;
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    letter-spacing: 1px; }
+.hero p { margin: 8px 0 0;
+    opacity: .82; }
+.trip-summary { display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 24px; }
+.summary-pill { background: rgba(255,255,255,.12);
+    border: 1px solid rgba(255,255,255,.18);
+    padding: 7px 13px;
+    border-radius: 999px;
+    font-size: .9rem; }
+@media (max-width: 600px) {
+.hero { padding: 30px 16px; }
+}
+.hero h1, .section-heading h2 { font-family: "Cormorant Garamond", "Noto Serif TC", Georgia, serif;
+    letter-spacing: -.025em; }
+.hero { position: relative;
+    overflow: hidden;
+    min-height: 525px;
+    padding: 0;
+    color: var(--paper);
+    background: var(--forest-deep); }
+.hero::after { content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: linear-gradient(90deg, rgba(11, 31, 26, .95) 0%, rgba(11,31,26,.78) 45%, rgba(11,31,26,.32) 75%, rgba(11,31,26,.18)); }
+.hero-inner { position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: minmax(0, .96fr) minmax(350px, .7fr);
+    max-width: 1200px;
+    min-height: 455px;
+    padding: 78px 34px 96px; }
+.hero-copy { align-self: end; max-width: 650px; }
+.eyebrow { color: var(--gold);
+    font-size: .69rem;
+    font-weight: 700;
+    letter-spacing: .18em;
+    text-transform: uppercase; }
+.hero h1 { max-width: 610px;
+    margin: 12px 0 10px;
+    color: #fffdf7;
+    font-size: clamp(3.1rem, 5vw, 4.75rem);
+    font-weight: 600;
+    line-height: .84; }
+.hero h1 span { display: block; font-size: .53em; margin-bottom: 13px; letter-spacing: .01em; }
+.hero p { max-width: 450px; margin: 18px 0 0; color: rgba(255,253,247,.77); font-size: 1rem; }
+.hero-visual { position: absolute;
+    inset: 0 0 0 44%;
+    background: linear-gradient(90deg, rgba(15,41,34,.36), rgba(15,41,34,.05)), url("bali.jpg") center / cover no-repeat;
+    filter: saturate(.8) contrast(.98); }
+.hero-visual-label { position: absolute;
+    right: 32px;
+    top: 34px;
+    color: rgba(255,255,255,.9);
+    font-size: .66rem;
+    font-weight: 700;
+    letter-spacing: .16em;
+    line-height: 1.55;
+    text-align: right; }
+.hero-visual-label span { color: var(--gold); }
+.trip-summary { gap: 8px; margin-top: 27px; }
+.summary-pill { padding: 7px 11px;
+    border: 1px solid rgba(255,253,247,.24);
+    border-radius: 999px;
+    color: rgba(255,253,247,.94);
+    background: rgba(255,253,247,.07);
+    font-size: .69rem;
+    font-weight: 700;
+    letter-spacing: .07em; }
+.home-dashboard { display: grid; gap: 26px; margin-bottom: 42px; }
+.home-dashboard > *, .section-heading > * { min-width: 0; }
+.text-action { display: inline-flex; gap: 12px; align-items: center; border: 0; padding: 0; color: inherit; background: transparent; cursor: pointer; font: 700 .82rem/1 "DM Sans", sans-serif; }
+.text-action span { font-size: 1.15em; transition: transform .2s; }
+.text-action:hover span { transform: translateX(4px); }
+.section-heading { display: flex; align-items: end; justify-content: space-between; gap: 18px; margin-bottom: 13px; }
+.section-heading h2 { margin: 5px 0 0; color: var(--forest); font-size: 2rem; line-height: .95; }
+.castle-moment { background-image: url("bali.jpg"); }
+@media (max-width: 760px) {
+.hero { min-height: 455px; }
+.hero-inner { display:block; min-height:455px; padding: 115px 21px 110px; }
+.hero-visual { inset:0; background-position:63% center; }
+.hero::after { background:linear-gradient(0deg,rgba(8,28,23,.96),rgba(8,28,23,.69) 54%,rgba(8,28,23,.28)); }
+.hero-copy { position:relative;z-index:1; }
+.hero h1 { font-size:3.45rem;max-width:355px; }
+.hero h1 span { font-size:.5em;margin-bottom:11px; }
+.hero p { font-size:.86rem; }
+.hero-visual-label { right:20px;top:19px;font-size:.58rem }
+.trip-summary { margin-top:19px }
+.summary-pill { font-size:.59rem;padding:6px 8px }
+.home-dashboard { gap:22px; margin-bottom:30px; }
+.section-heading h2 { font-size:1.85rem }
+}
+body.app-hub-home #overview > :not(.home-dashboard) { display: none; }
+.home-dashboard-v2 { display: grid; gap: 18px; margin-bottom: 0; }
+.home-dashboard-v2 > * { min-width: 0; }
+.home-status-card { display: flex; align-items: end; justify-content: space-between; gap: 20px; padding: 28px 30px; border-radius: 23px; color: #fff; background: linear-gradient(120deg, rgba(15,41,34,.96), rgba(23,63,53,.76)), url("bali.jpg") center / cover; box-shadow: 0 16px 38px rgba(15,41,34,.15); }
+.home-status-card .eyebrow { color: #e8cf97; }
+.progress-line { display:flex; align-items:baseline; gap:6px; margin:6px 0 14px; }
+.progress-line strong { font:600 clamp(2.7rem,5vw,4.5rem)/.78 "Cormorant Garamond",serif; }
+.progress-line span { color:rgba(255,255,255,.7); font-size:1rem; font-weight:700; }
+.home-status-card p { margin:9px 0 0; color:rgba(255,255,255,.74); font-size:.77rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase; }
+.status-seal { display:grid; place-content:center; flex:0 0 auto; width:88px; height:88px; border:1px solid rgba(232,207,151,.8); border-radius:50%; color:#fff; font:700 1.65rem/.8 "Cormorant Garamond",serif; text-align:center; transform:rotate(-8deg); }
+.status-seal span { margin-top:5px; color:#e8cf97; font:700 .43rem/1 "DM Sans",sans-serif; letter-spacing:.11em; }
+.today-journey, .next-event-card { padding:24px; border:1px solid var(--line); border-radius:20px; background:var(--paper); box-shadow:0 10px 25px rgba(31,51,42,.045); }
+.compact-heading { margin-bottom:17px; }
+.compact-heading h2 { font-size:2rem; }
+.journey-route-card { display:grid; grid-template-columns:1fr auto 1fr; gap:18px; align-items:center; padding:18px 0; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+.location-block span { display:block; color:var(--muted); font-size:.64rem; font-weight:700; letter-spacing:.1em; }
+.location-block strong { display:block; margin-top:5px; color:var(--forest); font:600 clamp(1.6rem,3vw,2.3rem)/1 "Cormorant Garamond",serif; }
+.journey-arrow { color:var(--gold); font-size:1.65rem; }
+.journey-facts { display:flex; flex-wrap:wrap; gap:10px; margin-top:14px; }
+.journey-facts span { padding:7px 10px; border-radius:999px; color:var(--forest); background:var(--sage-soft); font-size:.76rem; }
+.dashboard-feature-grid { display:grid; grid-template-columns:1.05fr .95fr; gap:14px; }
+.highlight-card { position:relative; min-height:220px; overflow:hidden; padding:24px; border-radius:20px; color:#fff; background:#203f35 center / cover; }
+.highlight-card::before { content:""; position:absolute; inset:0; background:linear-gradient(0deg,rgba(8,28,23,.86),rgba(8,28,23,.14)); }
+.highlight-card > * { position:relative; z-index:1; }
+.highlight-card .eyebrow { color:#e8cf97; }
+.highlight-card h2 { margin:57px 0 7px; color:#fff; font-size:2.45rem; }
+.highlight-card p { margin:0 0 14px; color:rgba(255,255,255,.82); font-size:.8rem; }
+.text-action.inverse { color:#fff; }
+.next-event-card { display:flex; flex-direction:column; }
+.next-event-card .eyebrow { color:var(--gold); }
+.next-event-time { margin-top:8px; color:var(--forest); font:600 3rem/.82 "Cormorant Garamond",serif; }
+.next-event-card h3 { margin:14px 0 7px; }
+.next-event-card p { margin:0 0 17px; color:var(--muted); font-size:.82rem; }
+.next-event-card .text-action { margin-top:auto; }
+@media (max-width:760px) {
+.home-dashboard-v2 { gap:13px; }
+.home-status-card { padding:23px 20px; border-radius:19px; }
+.progress-line strong { font-size:3.25rem; }
+.status-seal { width:67px; height:67px; font-size:1.25rem; }
+.status-seal span { font-size:.34rem; }
+.today-journey, .next-event-card { padding:19px 17px; border-radius:17px; }
+.compact-heading h2 { font-size:1.75rem; }
+.journey-route-card { gap:10px; padding:15px 0; }
+.location-block strong { font-size:1.55rem; }
+.location-block span { font-size:.56rem; }
+.journey-arrow { font-size:1.3rem; }
+.dashboard-feature-grid { grid-template-columns:1fr; gap:12px; }
+.highlight-card { min-height:206px; padding:20px; }
+.highlight-card h2 { margin-top:51px; font-size:2.2rem; }
+}
+.travel-page-intro .eyebrow { color:#e8cf97; }
+.map-page-intro .eyebrow { color:#e8cf97; }
+@media (max-width:760px) {
+.map-sidebar > .eyebrow { grid-column:1/-1; }
+}
+@media (max-width:760px) {
+.map-sidebar > .eyebrow { display:none; }
+}
+.weather-page-intro .eyebrow { color:#e8cf97; }
+.cabin-menu-shortcuts .eyebrow { color:#e8cf97; }
+:root { --ivory:#f6f1e7; --paper:#fffdf8; --forest:#173f35; --forest-deep:#0f2922; --ink:#132b25; --gold:#b89857; --muted:#627068; }
+body { background-color:var(--ivory); font-family:"DM Sans","Noto Sans TC",sans-serif; }
+.hero-inner { margin:auto; }
+.hero-copy { position:relative; z-index:2; }
+.hero h1, .home-dashboard h2, .home-dashboard h3 { font-family:"Cormorant Garamond","Noto Serif TC",Georgia,serif; }
+.home-dashboard section { margin:0; }
+.home-dashboard h2 { display:block; }
+.home-dashboard .next-event-card a { color:var(--forest); }
+.home-dashboard .highlight-card a { color:white; }
+[hidden] { display:none!important; }

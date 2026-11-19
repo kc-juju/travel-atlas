@@ -6,17 +6,23 @@
   <meta name="theme-color" content="#183d32">
   <title>峇里島六日｜KC &amp; Juju 的旅行手帳</title>
   <link rel="stylesheet" href="journal.css">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600&family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="overview.css">
 </head>
 <body>
-  <header>
-    <div class="wrap">
-      <a href="../">KC &amp; Juju ／ 旅程總覽</a>
-      <p class="destination" lang="en">Bali, Indonesia</p>
-      <h1>峇里島六日</h1>
-      <p class="dates">2026.12.24 — 12.29</p>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <a class="eyebrow" href="../">KC &amp; Juju ／ 旅程總覽</a>
+        <h1><span>Bali, Indonesia</span>峇里島六日</h1>
+        <p>2026 年 12 月 24 日 — 12 月 29 日</p>
+        <div class="trip-summary"><span class="summary-pill">烏布 2 晚</span><span class="summary-pill">水明漾 3 晚</span></div>
+      </div>
+      <div class="hero-visual"><div class="hero-visual-label">INDONESIA<br><span>BALI</span></div></div>
     </div>
   </header>
   <nav id="days" aria-label="行程分頁"><div class="wrap tab-strip">
+    <a id="tab-overview" href="#overview">旅程總覽</a>
     <a id="tab-day-1" href="#day-1">D1 · 12/24</a>
     <a id="tab-day-2" href="#day-2">D2 · 12/25</a>
     <a id="tab-day-3" href="#day-3">D3 · 12/26</a>
@@ -27,6 +33,27 @@
     <a id="tab-stays" href="#stays">住宿</a>
   </div></nav>
   <main class="wrap">
+    <section id="overview" aria-label="峇里島旅程總覽">
+      <div class="home-dashboard home-dashboard-v2">
+        <section class="home-status-card">
+          <div><div class="eyebrow">TRIP OVERVIEW</div><div class="progress-line"><strong>6 Days</strong><span>/ 5 晚</span></div><p>12.24 — 12.29</p></div>
+          <div class="status-seal">2026<span>BALI</span></div>
+        </section>
+        <section class="today-journey">
+          <div class="section-heading compact-heading"><div><div class="eyebrow">THE JOURNEY</div><h2>從烏布稻田，到水明漾海邊</h2></div></div>
+          <div class="journey-route-card">
+            <div class="location-block"><span>12.24 — 12.26</span><strong>Ubud</strong></div>
+            <div class="journey-arrow" aria-hidden="true">→</div>
+            <div class="location-block"><span>12.26 — 12.29</span><strong>Seminyak</strong></div>
+          </div>
+          <div class="journey-facts"><span>12/26 換宿 · 車程 <b>1.5–2.5 小時</b></span><a href="#stays">查看兩間住宿</a></div>
+        </section>
+        <div class="dashboard-feature-grid">
+          <article class="highlight-card castle-moment"><div class="eyebrow">TRIP HIGHLIGHT</div><h2>烏布的聖誕節</h2><p>12/25 · 烏布皇宮、市集與德哥拉朗梯田</p><a class="text-action inverse" href="#day-2">查看當日行程</a></article>
+          <article class="next-event-card"><div class="eyebrow">OUTBOUND FLIGHT</div><div class="next-event-time">JX765</div><h3>桃園 → 峇里島</h3><p>12/24 出發 · 12/29 搭 JX766 返台</p><a class="text-action" href="#flights">查看航班</a></article>
+        </div>
+      </div>
+    </section>
     <section id="day-1" class="day-panel"><article>
           <p class="meta"><time datetime="2026-12-24">12.24　週四</time></p>
           <h2>抵達烏布，泳池邊吃晚餐</h2>
