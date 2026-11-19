@@ -1,11 +1,50 @@
 <!doctype html>
 <html lang="zh-Hant">
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>KC &amp; Juju 的旅程總覽</title>
-<style>
-*{box-sizing:border-box}body{margin:0;background:#f5f6f1;color:#203c35;font:1rem/1.6 system-ui,sans-serif}main{max-width:960px;margin:auto;padding:clamp(24px,6vw,72px)}header{border-bottom:2px solid;padding-bottom:22px}header p{margin:0;color:#536b61;font:italic 1.6rem Georgia,serif}h1{margin:.25em 0 0;font-size:clamp(2.4rem,8vw,4.5rem);line-height:1.2}section{margin-top:36px}h2{font-size:1.1rem}a{display:grid;grid-template-columns:1fr 1fr;color:inherit;text-decoration:none;background:white;border:1px solid #cad4ca;border-radius:12px;overflow:hidden}img{width:100%;height:100%;min-height:230px;object-fit:cover}.info{padding:clamp(24px,4vw,48px);align-self:center}small{font:1rem Georgia,serif;color:#536b61}h3{font-size:clamp(1.5rem,3vw,2rem);margin:.4em 0 1em}span{border-bottom:1px solid;padding-bottom:4px}a:hover span{border-width:2px}a:focus-visible{outline:4px solid #146955;outline-offset:4px}@media(max-width:600px){a{grid-template-columns:1fr}img{height:190px;min-height:0}}
-</style>
-<main><header><p>KC &amp; Juju</p><h1>旅程總覽</h1></header>
-<section aria-labelledby="year"><h2 id="year">2026</h2>
-<a href="https://kc-juju.github.io/uk-ireland-trip/"><img src="nottingham.jpg" alt="諾丁漢城市足球場"><div class="info"><small lang="en">United Kingdom &amp; Ireland</small><h3>英國・愛爾蘭蜜月</h3><span>查看行程</span></div></a>
-</section></main></html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#faf8f2">
+  <title>KC &amp; Juju 的旅程總覽</title>
+  <style>
+    :root { color-scheme: light; --paper: #faf8f2; --ink: #252b28; --accent: #a4412c; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font: 1rem/1.6 system-ui, sans-serif; }
+    main { width: min(100% - 2.5rem, 66rem); margin: auto; padding: 2rem 0 4rem; }
+    header { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; border-bottom: 1px solid #b9b9ae; padding-bottom: .75rem; }
+    .signature { font: italic clamp(1.5rem, 4vw, 2rem)/1.2 Georgia, serif; }
+    h1 { margin: 0; font-size: 1rem; font-weight: 500; letter-spacing: .12em; }
+    h2 { display: flex; align-items: center; gap: 1rem; margin: 2rem 0 1.4rem; font: normal clamp(3.4rem, 10vw, 6rem)/1 Georgia, serif; letter-spacing: -.06em; }
+    h2::after { content: ''; width: 2.2rem; height: .24rem; background: var(--accent); }
+    .trip { display: grid; position: relative; isolation: isolate; overflow: hidden; min-height: clamp(23rem, 44vw, 31rem); align-items: end; color: white; text-decoration: none; background: #23372f; }
+    .trip img, .trip::before { position: absolute; inset: 0; width: 100%; height: 100%; }
+    .trip img { z-index: -2; object-fit: cover; object-position: 50% 45%; }
+    .trip::before { content: ''; z-index: -1; background: linear-gradient(0deg, rgba(13,23,21,.94), rgba(13,23,21,.58) 28%, transparent 70%); }
+    .detail { display: flex; align-items: end; justify-content: space-between; gap: 1rem; padding: clamp(1.4rem, 4vw, 3rem); }
+    .place { margin: 0 0 .4rem; font: italic clamp(1.05rem, 2vw, 1.4rem)/1.4 Georgia, serif; }
+    h3 { margin: 0; font: 600 clamp(1.8rem, 5vw, 3.6rem)/1.3 "Noto Serif TC", "Songti TC", serif; }
+    .action { flex: none; padding: .65rem 1.25rem; border-radius: 2rem; background: var(--paper); color: var(--ink); font-weight: 600; }
+    .trip:hover .action, .trip:focus-visible .action { background: #ffdfb5; }
+    .trip:focus-visible { outline: 3px solid var(--accent); outline-offset: 5px; }
+    @media (max-width: 36rem) {
+      main { padding-top: 1.5rem; }
+      .detail { flex-direction: column; align-items: start; }
+      .trip { min-height: 24rem; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header><span class="signature" lang="en">KC &amp; Juju</span><h1>旅程總覽</h1></header>
+    <section aria-labelledby="year-2026">
+      <h2 id="year-2026">2026</h2>
+      <a class="trip" href="https://kc-juju.github.io/uk-ireland-trip/">
+        <img src="nottingham.jpg" alt="諾丁漢城市足球場">
+        <div class="detail">
+          <div><p class="place" lang="en">United Kingdom &amp; Ireland</p><h3>英國・愛爾蘭蜜月</h3></div>
+          <span class="action">查看行程</span>
+        </div>
+      </a>
+    </section>
+  </main>
+</body>
+</html>
