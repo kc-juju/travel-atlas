@@ -35,3 +35,9 @@ dd { margin:0; }
   .pair { grid-template-columns:1fr; }
   dl div { grid-template-columns:1fr; gap:.15rem; }
 }
+nav { background:#faf7eef7; border-bottom:1px solid var(--line); }
+nav .tab-strip { overflow-x:auto; gap:.4rem; padding-block:.65rem; }
+.tab-strip a { flex:none; padding:.45rem .85rem; color:var(--forest); border:1px solid var(--line); border-radius:2rem; background:#fffdf8; font-size:.94rem; }
+.tab-strip [aria-selected=true] { background:var(--forest); border-color:var(--forest); color:white; }
+.day-panel h2 { margin:.5rem 0; }
+.sun { color:#775727; font-variant-numeric:tabular-nums; }
